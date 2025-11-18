@@ -15,6 +15,7 @@
     <main class="main-content">
       <router-view />
     </main>
+    <Footer />
   </div>
 </template>
 
@@ -22,6 +23,7 @@
 import { ref, onMounted } from 'vue';
 import { useRouter } from 'vue-router';
 import { authService } from './services/authService';
+import Footer from './components/Footer.vue';
 
 const router = useRouter();
 const isAuthenticated = ref(false);
